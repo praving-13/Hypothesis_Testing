@@ -1,0 +1,43 @@
+
+# calculate summary stats
+from numpy.random import seed
+from numpy.random import randn
+from numpy import mean
+from numpy import var
+from numpy import std
+# seed the random number generator
+seed(1)
+# generate univariate observations
+data = 5 * randn(10000) + 50
+# calculate statistics
+print('Mean: %.3f' % mean(data))
+print('Variance: %.3f' % var(data))
+print('Standard Deviation: %.3f' % std(data))
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+# calculate summary stats
+from numpy.random import seed
+from numpy.random import randn
+from numpy import mean
+from numpy import var
+from numpy import std
+# seed the random number generator
+seed(1)
+# generate univariate observations
+data = 5 * randn(10000) + 50
+# calculate statistics
+print('Mean: %.3f' % mean(data))
+print('Variance: %.3f' % var(data))
+print('Standard Deviation: %.3f' % std(data))
