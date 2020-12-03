@@ -1,0 +1,8 @@
+import statsmodels.api as sm
+import numpy as np
+import matplotlib.pyplot as plt
+n = 1018
+pnull = .52
+phat = .56
+sm.stats.proportions_ztest(phat * n, n, pnull, alternative='larger')
+>> (2.571067795759113, 0.005069273865860533)
