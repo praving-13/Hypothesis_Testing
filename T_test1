@@ -1,0 +1,14 @@
+Data: 247 Parents of Black Children. 36.8% of parents report that their child has had some swimming lessons. 308 Parents of Hispanic Children. 38.9% of parents report that their child has had some swimming lessons.
+Approach: The difference in population proportion needs t-test. Also, the population follows a binomial distribution here. We can just pass on the two population quantities with the appropriate binomial distribution parameters to the t-test function.
+We can use thettest_ind() function from Statsmodels. The function returns three values: (a) test statistic, (b) p-value of the t-test, and (c) degrees of freedom used in the t-test.
+n1 = 247
+p1 = .37
+
+n2 = 308
+p2 = .39
+
+population1 = np.random.binomial(1, p1, n1)
+population2 = np.random.binomial(1, p2, n2)
+sm.stats.ttest_ind(population1, population2)
+>> (0.9309838177540464, 0.3522681761633615, 553.0)
+Conclusion: Since the p-value (~0.352) is quite high, we cannot reject the Null hypothesis that the difference in the population proportions is zero.
