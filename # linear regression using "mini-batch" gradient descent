@@ -1,5 +1,5 @@
 # linear regression using "mini-batch" gradient descent 
-# function to compute hypothesis / predictions 
+# function to compute hypothesis / predictions as follows
 def hypothesis(X, theta): 
     return np.dot(X, theta) 
   
